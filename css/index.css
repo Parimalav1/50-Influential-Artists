@@ -177,17 +177,18 @@ header nav .navele .navele home {
   background: url(../assets/Henri-Rousseau.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-color: #FFFFFF;
   height: 70vh;
-  display: flex;
   justify-content: center;
-  flex-direction: column;
   align-items: center;
+  display: flex;
+  flex-direction: column;
 }
 .title-container h1 {
   font-size: 4rem;
   width: 40%;
+  color: #000;
   text-align: center;
-  color: #FFF;
 }
 .title-container button {
   padding: 10px 3%;
@@ -199,8 +200,8 @@ header nav .navele .navele home {
 }
 .artists-container .artist {
   width: 50%;
-  display: flex;
   flex-direction: column;
+  display: flex;
   align-content: center;
   margin: 20px 0;
 }
@@ -213,10 +214,13 @@ header nav .navele .navele home {
   text-decoration: none;
   font-size: 1.6rem;
   padding: 30px 0;
+  color: #000;
 }
 .artists-container .artist .bio {
   justify-content: center;
+  display: flex;
   align-content: center;
   text-align: justify;
   padding: 10px 5%;
+  color: #663399;
 }
