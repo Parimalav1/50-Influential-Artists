@@ -194,6 +194,9 @@ header nav .navele .navele home {
   padding: 10px 3%;
   font-size: 1.2rem;
 }
+.title-container hr {
+  border-bottom: 1px dashed black;
+}
 .artists-container {
   display: flex;
   justify-content: space-around;
@@ -223,4 +226,15 @@ header nav .navele .navele home {
   text-align: justify;
   padding: 10px 5%;
   color: #663399;
+}
+@media ( max-width: 500px ) {
+  .artists-container {
+    flex-direction: column;
+    display: flex;
+    align-content: center;
+  }
+  .artists-container .artist {
+    width: 80%;
+    margin: 8% auto;
+  }
 }
