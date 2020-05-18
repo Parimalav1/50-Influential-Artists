@@ -1,4 +1,240 @@
-/* Font in design files is Raleway */
-
-/* background-image in Design 👇
- url('https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/John_Martin_-_The_Plains_of_Heaven_-_Google_Art_Project.jpg/1920px-John_Martin_-_The_Plains_of_Heaven_-_Google_Art_Project.jpg'); */
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1.5;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 100%;
+}
+html,
+body {
+  font-family: 'Roboto', sans-serif;
+}
+h1,
+h2 {
+  font-family: 'Indie Flower', cursive;
+}
+h2 {
+  font-size: 3.2rem;
+  padding-bottom: 10px;
+}
+p {
+  line-height: 1.5;
+  font-size: 1.6rem;
+  padding-bottom: 10px;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+header {
+  display: flex;
+  justify-content: center;
+}
+header nav {
+  padding: 10px 20px;
+  margin: 20px auto;
+}
+header nav .line {
+  border-right: 1px solid black;
+  border-left: 1px solid black;
+}
+header nav .navele {
+  text-decoration: none;
+  padding: 5px 10px;
+  color: #000;
+  font-size: 1.2rem;
+}
+header nav .navele .navele home {
+  font-weight: bold;
+}
+.title-container {
+  background: url(../assets/Henri-Rousseau.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #FFFFFF;
+  height: 70vh;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.title-container h1 {
+  font-size: 4rem;
+  width: 40%;
+  color: #000;
+  text-align: center;
+}
+.title-container button {
+  padding: 10px 3%;
+  font-size: 1.2rem;
+}
+.title-container hr {
+  border-bottom: 1px dashed black;
+}
+.artists-container {
+  display: flex;
+  justify-content: space-around;
+}
+.artists-container .artist {
+  width: 50%;
+  flex-direction: column;
+  display: flex;
+  align-content: center;
+  margin: 20px 0;
+}
+.artists-container .artist img {
+  width: 70%;
+  margin: 0 auto;
+}
+.artists-container .artist a {
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.6rem;
+  padding: 30px 0;
+  color: #000;
+}
+.artists-container .artist .bio {
+  justify-content: center;
+  display: flex;
+  align-content: center;
+  text-align: justify;
+  padding: 10px 5%;
+  color: #663399;
+}
+@media ( max-width: 500px ) {
+  .artists-container {
+    flex-direction: column;
+    display: flex;
+    align-content: center;
+  }
+  .artists-container .artist {
+    width: 80%;
+    margin: 8% auto;
+  }
+}
